@@ -11,6 +11,7 @@
        
     <qingzhu:registry  protocol="redis" address="192.168.213.148:6379"></qingzhu:registry>
     <qingzhu:reference id="UserServiceImpl" interface="com.liugw.provider.service.dubbotest.UserService" loadbalance="random" protocol="rmi"></qingzhu:reference>
+    <qingzhu:reference id="StudentServiceImpl" interface="com.liugw.provider.service.dubbotest.StudentService" loadbalance="random" protocol="rmi"></qingzhu:reference>
  	<!-- <qingzhu:reference id="testServiceImpl3" interface="com.dongnao.jack.test.service.TestService" loadbalance="random" protocol="http"></qingzhu:reference> -->
  	<qingzhu:protocol  name="http" port="12345" host="127.0.0.1" contextpath="/provide1"></qingzhu:protocol>
  	
